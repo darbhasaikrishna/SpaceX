@@ -14,6 +14,9 @@
 2) Do npm install.
 3) Run npm run dev:ssr in the terminal.
 
+OR Run this in your browser to view the application
+http://13.232.90.34:4000/
+
 
 
 # SpaceX
