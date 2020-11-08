@@ -1,0 +1,44 @@
+<div class="main-container">
+    <h1>Space X Launch Programs</h1>
+    <div class="row">
+        <div class="filters-div">
+            <h3 style="margin-left: 1rem;">Filters</h3>
+            <div class="sub-filter">Launch Year</div>
+            <div class="filter-btns">
+                <div class="filtbtn" *ngFor="let btn of filterYears; let i = index">
+                    <button class="btn-filters" [class.btn-bold]="i === selYear"  (click)="filter('launch_year', btn, i)">{{btn}}</button>
+                </div>
+            </div>
+            <div class="sub-filter">Successful Launch</div>
+            <div class="filter-btns">
+                <div class="filtbtn" *ngFor="let btn of dual; let i = index">
+                    <button class="btn-filters" [class.btn-bold]="i === selLaunch"  (click)="filter('launch_success', btn, i)">{{btn}}</button>
+                </div>
+            </div>
+            <div class="sub-filter">Successful Landing</div>
+            <div class="filter-btns">
+                <div class="filtbtn" *ngFor="let btn of dual; let i = index">
+                    <button class="btn-filters" [class.btn-bold]="i === selLanding" (click)="filter('land_success', btn, i)">{{btn }}</button>
+                </div>
+            </div>
+        </div>
+        <div class="programs-div">
+            <ng-container *ngIf="programs.length > 0 && !loading; else noItems">
+            <div class="item-div" *ngFor="let p of programs">
+                <img src={{p.links.mission_patch}} class="img-cls">
+                <div class="label-div"><span class="font-bold">Mission Ids:</span>
+                    <span *ngFor="let id of p?.mission_id; let last">{{id}} <span *ngIf="!last">,</span></span></div>
+                <div class="label-div"><span class="font-bold">Launch Year:</span><span>{{p?.launch_year}}</span></div>
+                <div class="label-div"><span class="font-bold">Successful Launch:</span><span>{{p?.launch_success}}</span></div>
+                <div class="label-div"><span class="font-bold">Successful Landing:</span><span>NA</span></div>
+            </div></ng-container>
+            <ng-template #noItems>
+                No Results Found
+            </ng-template>
+        </div>
+        <div *ngIf="loading" class="loading">
+            Loading...
+        </div>
+    </div>
+    <div style="text-align: center;"><h1>Developed by: Sai krishna Darbha</h1></div>
+</div>

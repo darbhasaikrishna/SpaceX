@@ -1,0 +1,306 @@
+
+.main-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn-bold {
+    background-color: green !important;
+}
+// @media (min-width: 1024px) {
+//     .main-container {
+//         max-width: 1000px;
+//     }
+// }
+
+// @media (min-width: 700px) and (max-width: 1023px){
+// .main-container {
+//     max-width: 650px;
+// }
+// }
+
+// @media (min-width: 350px){
+//     .main-container {
+//         max-width: 330px;
+//     }
+//     }
+// @media (min-width: 500px){
+//         .main-container {
+//             max-width: 430px;
+//         }
+//         }
+
+
+
+
+@media (max-width: 700px) {
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        
+}
+
+.filters-div {
+    background-color: white;
+    
+}
+
+.sub-filter {
+    border-bottom: 2px solid grey;
+    margin: 0rem 2rem;
+    text-align: center;
+}
+
+.filter-btns {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0.75rem;
+}
+
+.btn-filters {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: black;
+    background-color: lightgreen;
+    height: 30px;
+    width: 100%;
+    margin: 1rem;
+}
+.filtbtn{
+    width: 42%;
+    margin: 0 0.5rem;
+}
+
+.item-div {
+    background-color: white;
+    height: 320px;
+    width: 95%;
+    margin:0.5rem;
+    padding:0.5rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.programs-div {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+.img-cls {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.label-div {
+    margin: 0.2rem 0rem;
+}
+}
+@media screen and (min-width: 969px) and (max-width:1024px){
+    .filters-div {
+        background-color: white;
+        max-width: 30%;
+        margin: 0.3rem 0.2rem 0rem 0.2rem;
+    }
+    .sub-filter {
+        border-bottom: 2px solid grey;
+        margin: 0rem 2rem;
+        text-align: center;
+    }
+    
+    .filter-btns {
+        display: flex;
+        flex-wrap: wrap;
+        padding:0.75rem;
+    }
+    
+    .btn-filters {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: black;
+        background-color: lightgreen;
+        height: 30px;
+        width: 100%;
+        margin: 1rem;
+    }
+    .filtbtn{
+        width: 42%;
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 968px) {
+    .filters-div {
+        background-color: white;
+        max-width: 25%;
+        margin: 0.3rem 0.2rem 0rem 0.2rem;
+    }
+    
+    .sub-filter {
+        border-bottom: 2px solid grey;
+        margin: 0rem 1rem;
+        text-align: center;
+    }
+    
+    .filter-btns {
+        display: flex;
+        flex-wrap: wrap;
+        padding:0rem;
+    }
+    
+    .btn-filters {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: black;
+        background-color: lightgreen;
+        height: 30px;
+        width: 100%;
+        margin: 1rem;
+    }
+    .filtbtn{
+        width: 32%;
+        margin: 0 0.1rem;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width:1024px){
+    .row {
+        display: flex;
+        
+}
+    
+    .item-div {
+        background-color: white;
+        height: 320px;
+        width: 45%;
+        margin:0.3rem;
+        padding:0.5rem;
+    }
+    
+    .font-bold {
+        font-weight: bold;
+    }
+    
+    .programs-div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    
+    .img-cls {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .label-div {
+        margin: 0.2rem 0rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1440px){
+    .filters-div {
+        background-color: white;
+        max-width: 25%;
+        margin: 0.3rem 0.2rem 0rem 0.2rem;
+    }
+    
+    .sub-filter {
+        border-bottom: 2px solid grey;
+        margin: 0rem 1rem;
+        text-align: center;
+    }
+    
+    .filter-btns {
+        display: flex;
+        flex-wrap: wrap;
+        padding:0rem;
+    }
+    
+    .btn-filters {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: black;
+        background-color: lightgreen;
+        height: 30px;
+        width: 100%;
+        margin: 1rem;
+    }
+    .filtbtn{
+        width: 42%;
+        margin: 0 0.1rem;
+    }
+    .row {
+        display: flex;
+        
+}
+    
+    .item-div {
+        background-color: white;
+        height: 320px;
+        width: 21%;
+        margin:0.3rem;
+        padding:0.5rem;
+        
+    }
+    
+    .font-bold {
+        font-weight: bold;
+    }
+    
+    .programs-div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    
+    .img-cls {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .label-div {
+        margin: 0.2rem 0rem;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
